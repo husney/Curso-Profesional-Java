@@ -14,33 +14,38 @@ import java.util.Scanner;
  */
 public class Algoritmos {
     
-    public static void main(String args[]){
+   public static void main(String []args) throws Exception{
+       
+    Scanner sc = new Scanner(System.in);
+       
+    int a[] = new int [5];
+    int b[] = new int [5];
     
-        Scanner sc = new Scanner(System.in);
-        
-        String s = "s";
-        int i = 0;
-        double suma = 0;
-        
-        while(s.equalsIgnoreCase("s")){
-            
-            
-            int c = " ada";
-            
-           
-            try{
-         
-                    String n = Integer.toString(c);
-                    int b = Integer.parseInt(n);
-            
-                
-            }catch(Exception e){
-                System.out.println("No Es un numero");
-                e.setStackTrace(c);
-            }
-            
-            
+    for(int i = 0; i < a.length; i++){
+        System.out.println("Array a: Ingrse un valor para el campo "+i);
+        a[i] = sc.nextInt();
+    }
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   /**************************************************************************/      
     }//fin metodo main
-} 
+   public static void llamar(String mensaje) throws Exception{
+       
+       throw new Ex2(mensaje);
+       
+   }
+}
+
 
